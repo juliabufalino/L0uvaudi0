@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Audioguide</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f6f4ef; color: #222; line-height: 1.5; }
+    header { background: #2f4a3a; color: #fff; padding: 24px 16px; text-align: center; }
+    main { max-width: 640px; margin: 0 auto; padding: 16px; }
+    .etape { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+    .etape h2 { margin-top: 0; font-size: 1.25rem; }
+    .etape img { width: 100%; height: auto; border-radius: 8px; }
+    audio { width: 100%; margin-top: 10px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #181a18; color: #eee; }
+      .etape { background: #242624; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Audioguide</h1>
+    <p>Appuyez sur lecture pour écouter chaque étape.</p>
+  </header>
+  <main>
+    <section class="etape">
+      <h2>1. Première étape</h2>
+      <img src="images/tessons de céramique avec bitume.JPG" alt="Description de l'image" loading="lazy">
+      <audio controls preload="none" src="audio/tessons de céramique avec bitume.mp3"></audio>
+      <p>Salle 234, Aile Richelieu, Niveau 0: tessons de céramique avec bitume</p>
+    </section>
+
+    <section class="etape">
+      <h2>2. Deuxième étape</h2>
+      <img src="images/figurine plaquette de dieu.JPG" alt="Description de l'image" loading="lazy">
+      <audio controls preload="none" src="audio/figurine plaquette de dieu assis.mp3"></audio>
+	  <p> Salle 228, Aile Richelieu, niveau 0: figurine plaquette de dieu assis</p>
+    </section>
+  </main>
+</body>
+</html>
